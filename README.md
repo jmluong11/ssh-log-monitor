@@ -4,7 +4,7 @@ A Python-based security monitoring tool that continuously parses SSH authenticat
 
 ## Project Overview
 This project automates the detection of suspicious SSH login failures by parsing log files (/var/log/auth.log or any specified log), identifying IP addresses with repeated failed login attempts beyond a configurable threshold, and sending real-time email notifications to security personnel.
-
+<img src="https://i.imgur.com/6B0idf6.png" height="80%" width="100%"/>
 It is designed to run as a cron job for continuous monitoring, helping system administrators proactively respond to unauthorized access attempts.
 
 
