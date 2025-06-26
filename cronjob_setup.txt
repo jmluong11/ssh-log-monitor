@@ -1,0 +1,14 @@
+# Cron Job Setup for SSH Log Monitor
+
+To automate running the SSH Log Monitor script every 5 minutes, add the following line to your crontab:
+
+*/5 * * * * /usr/bin/python3 /full/path/to/ssh_log_monitor/ssh_log_monitor.py >> /full/path/to/ssh_log_monitor/monitor.log 2>&1
+
+Steps:
+
+1. Open your terminal.
+2. Run `crontab -e` to edit your cron jobs.
+3. Paste the above line (update the paths to your actual Python interpreter and script location).
+4. Save and exit the editor.
+
+This will run the script every 5 minutes and log output to `monitor.log`.
